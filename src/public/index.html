@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>
+</head>
+
+<body class="relative">
+    <header class="flex flex-row-reverse md:flex-row items-center justify-between bg-white p-2.5 sticky top-0 z-50">
+        <div class="logo w-2/6 md:w-1/6">
+            <img src="img/logo.png" alt="sib logo" class="w-full pr-5 md:pr-0 md:w-2/3 mx-auto block">
+        </div>
+        <div class="R-header flex justify-between items-center w-5/6 ">
+            <nav class="hidden md:block">
+                <a href="#" class="px-2.5 hover:text-orange-400">Shop</a>
+                <a href="#" class="px-2.5 hover:text-orange-400">Give</a>
+                <a href="#" class="px-2.5 hover:text-orange-400">Our story</a>
+            </nav>
+            <div class="md:flex justify-between items-center hidden ">
+                <div class="search-input bg-orange-100 rounded-md w-32 flex items-center  mr-2 mb-1">
+                    <button class="p-2 w-1/3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                    <input type="search" name="" id="" class=" w-2/3 bg-orange-100" placeholder="search">
+                </div>
+                <div class="icon-bar text-stone-800 hidden md:block">
+                    <a href="#" class="bg-orange-100 rounded-md p-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="H-icon block md:hidden p-2 rounded-md ">
+                <div class="text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div
+            class="hamburger absolute flex flex-col h-screen w-1/2 top-full  -left-full bg-stone-900 z-40 transition-[2s] rounded-e-md">
+            <a href="#" class="px-2.5 py-2 block text-stone-400  border-b border-red-50">Shop</a>
+            <a href="#" class="px-2.5 py-2 block text-stone-400  border-b border-red-50">Give</a>
+            <a href="#" class="px-2.5 py-2 block text-stone-400  border-b border-red-50">Our story</a>
+        </div>
+
+    </header>
+    <section class=" px-2 sm:container mt-10">
+        <div class="banner h-96 overflow-hidden rounded-md relative ">
+            <img src="img/banner 2.png" alt="banner" class="w-full h-full">
+            <div class="banner-text absolute top-1/4 left-6 z-20 w-5/6 lg:px-24">
+                <h1 class="text-white text-base sm:text-2xl lg:text-5xl font-serif font-black">Craft Peanuts for the
+                    Snack and Sip Enthusiast
+                </h1>
+                <p class="text-white text-xs my-5 font-serif">Our premium, small batch peanuts are crafted to pair
+                    perfectly
+                    with your favorite alcoholic beverages. Each flavor is designed to compliment the unique
+                    characteristics of your drink.</p>
+                <a href="#"
+                    class="bg-orange-400 text-sm md:text-base lg:text-lg px-2 lg:px-5 py-1 lg:py-2  font-serif mx-auto md:mx-0 block w-20  md:inline hover:bg-orange-300 hover:rounded-es-lg hover:rounded-se-lg ">Shop
+                    Now</a>
+            </div>
+            <div class="shadow absolute top-0 right-0 w-full h-full z-10 bg-shadow bg-gradient-to-r">
+            </div>
+        </div>
+        <div class="featured my-12">
+            <div class="f-title mb-5 section-title">
+                <h2 class="text-lg sm:text-2xl font-semibold font-serif">Featured Products</h2>
+            </div>
+            <div class="f-bar flex justify-between items-center overflow-x-scroll scrolly pb-10 md:none-scroll">
+                <div class="f-card w-1/3 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg  overflow-hidden">
+                    <img src="img/wine.png" alt="beer" class="w-full h-50 md:h-56 ">
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Beer Salted Craft Peanuts</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </div>
+                <div class="f-card w-1/3 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg  overflow-hidden">
+                    <img src="img/large beer.png" alt="beer" class="w-full h-50 md:h-56">
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Beer Salted Craft Peanuts</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </div>
+                <div class="f-card w-1/3 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg overflow-hidden ">
+                    <img src="img/beer.png" alt="beer" class="w-full h-50 md:h-56">
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Beer Salted Craft Peanuts</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </div>
+                <div class="f-card w-1/3 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg overflow-hidden ">
+                    <img src="img/wine.png" alt="beer" class="w-full h-50 md:h-56">
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Beer Salted Craft Peanuts</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </div>
+                <div class="f-card w-1/3 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg overflow-hidden ">
+                    <img src="img/beer.png" alt="beer" class="w-full h-50 md:h-56 ">
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Beer Salted Craft Peanuts</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arivval my-12">
+            <div class="a-title mb-5 section-title">
+                <h2 class="text-lg sm:text-2xl font-semibold font-serif">New Arrivals</h2>
+            </div>
+            <div class="a-bar flex justify-between items-center overflow-x-scroll scrolly pb-10 md:none-scroll">
+                <a href="#" class="a-card w-1/2 sm:w-1/4 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg  overflow-hidden group">
+                    <div class="card-img overflow-hidden">
+                        <img src="img/penute.png" alt="beer" class="w-full h-32  group-hover:scale-[1.1] transition">
+                    </div>
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Peanut Butter Chocolate Truffles</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </a>
+                <a href="#" class="a-card w-1/2 sm:w-1/4 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg  overflow-hidden group">
+                    <div class="card-img">
+                        <img src="img/toffy.png" alt="beer" class="w-full h-32 group-hover:scale-[1.1] transition">
+                    </div>
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Peanut Butter Chocolate Truffles</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </a>
+                <a href="#" class="a-card w-1/2 sm:w-1/4 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg overflow-hidden group ">
+                    <div class="card-img">
+                        <img src="img/darkchocolate.png" alt="beer" class="w-full h-32 group-hover:scale-[1.1] transition">
+                    </div>
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Peanut Butter Chocolate Truffles</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </a>
+                <a href="#" class="a-card w-1/2 sm:w-1/4 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg overflow-hidden group ">
+                    <div class="card-img">
+                        <img src="img/penute.png" alt="beer" class="w-full h-32 group-hover:scale-[1.1] transition">
+                    </div>
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Peanut Butter Chocolate Truffles</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </a>
+                <a href="#" class="a-card w-1/2 sm:w-1/4 mr-5 flex-shrink-0  shadow-lg pb-5 rounded-lg overflow-hidden group ">
+                    <div class="card-img">
+                        <img src="img/toffy.png" alt="beer" class="w-full h-32  group-hover:scale-[1.1] transition">
+                    </div>
+                    <div class="card-text pl-2">
+                        <h3 class="font-serif my-5">Peanut Butter Chocolate Truffles</h3>
+                        <span class="font-serif my-5">$10</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
